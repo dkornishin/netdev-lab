@@ -1,0 +1,51 @@
+--- Системные файлы ОС ---
+.DS_Store
+Thumbs.db
+desktop.ini
+
+--- Временные и бэкап-файлы редакторов ---
+*~
+*.swp
+*.swo
+
+--- VS Code (локальные настройки, не для команды) ---
+.vscode/*
+!.vscode/settings.json
+!.vscode/launch.json
+
+--- Python: зависимости, кэш, байт-код ---
+venv/
+.venv/
+env/
+*.pyc
+pycache/
+.pytest_cache/
+.coverage
+htmlcov/
+
+--- Секреты и локальные конфиги ---
+.env
+secrets.json
+config.local.yml
+config.yaml
+*.key
+*.pem
+*.pfx
+
+--- Артефакты и логи ---
+logs/
+log/
+*.log
+tmp/
+temp/
+build/
+dist/
+*.egg-info
+
+--- YAML/Ansible: кэш и артефакты ---
+.ansible/
+*.retry
+
+--- Docker (если будешь использовать в проекте) ---
+docker-compose.override.yml
+.env.docker
